@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Toiler</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css") }}">
+</head>
+
+<body>
+    <h1>Toiler</h1>
+    {% if user %}
+    <p>Bem-vindo ao Toiler, {{ user }}! </p>
+    {% else %}
+    <p>Bem-vindo ao Toiler!</p>
+    {% endif %}
+
+
+    <script src="{{url_for('static', filename="js/bootstrap.min.js")}}"></script>
+</body>
+
+</html>
